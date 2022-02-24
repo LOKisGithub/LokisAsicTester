@@ -1,0 +1,121 @@
+[Config]
+Name=BHB07702
+Asic_Type=1397
+Asic_Num=44
+
+# clock delay
+# Bit[0] SWPF_MODE
+# Bit[1] Reserved
+# Bit[2] MMEN
+# Bit[3] HASH_CLKEN
+# Bit[5:4] PWTH_SEL
+# Bit[7:6] CCDLY_SEL
+CoreClockDelay=0x34
+#PWTH_SEL=3
+#CCDLY_SEL=0
+
+# test how many patterns, max is 8
+Pattern_Number=8
+
+# permit how many ASICs not receive all nonces
+Invalid_Asic_Num=44
+
+# permit how many Cores not receive all nonces
+Invalid_Core_Num=128
+
+# the least nonce number per core get
+Least_Nonce_Per_Core=7
+
+# the most HW number
+Most_HW_Num=128
+
+# timeout_percent
+Timeout_Percent=90
+
+# baud rate
+Baudrate=6000000
+
+# 0: pattern test
+# 1: only find asic
+Only_find_ASIC=0
+
+# frequence
+Freq1=700
+Freq2=680
+Freq3=630
+Freq4=630
+Freq5=700
+Freq6=680
+Freq7=600
+Freq8=550
+Freq9=0
+
+# voltage
+Open_Core_Voltage=1850
+Voltage1=1750
+Voltage2=1770
+Voltage3=1750
+Voltage4=1780
+Voltage5=1730
+Voltage6=1750
+Voltage7=1800
+Voltage8=1830
+Voltage9=0
+
+#test sequency
+Step1=2
+Step2=4
+Step3=3
+Step4=7
+Step5=8
+Step6=1
+Step7=5
+Step8=6
+Step9=0
+
+#sensor model
+#1:NCT218
+Sensor_Model=1
+Start_Temp=0
+Alarm_Temp=100
+Heat_Time=60
+
+# fan speed, 0 is min, 100 is max
+Fan_Speed=100
+
+# wait time before close power
+Close_Power_Delay=1
+
+# version info
+Hardware_Version_1=1
+Hardware_Version_2=0
+Bom_Version_1=1
+Bom_Version_2=0
+Product_ID=0
+
+# 1 is repair mode (do not overwrite cgminer eeprom info)
+Repair_Mode=1
+
+# 1 is dump all lost nonce
+Dump_Lost_Nonce=0
+
+# If nonece% >= bad_chip_nonce_rate%, the chip is bad
+bad_chip_nonce_rate=75
+
+# If bad chip num >= bad_chip_num, will stop test
+bad_chip_num=1
+
+# max voltage diff for voltage check, 100 means 1v, 50 means 0.5v
+voltage_diff=50
+
+# dump pm data test, 0: disable, 1: enable
+check_pm=0
+
+# use bar code gun to scan QR code and SN, 0: disable, 1: enable
+scan_qr_code=0
+
+# use this flag to adpat different test case, 0: single board test, 1: multi hashboards on the miner machine, but test the hashboard one by one
+Multi_board_case = 0
+
+# 1 enable upload log file to ftpserver, 0 disable it
+Upload_log_switch=1

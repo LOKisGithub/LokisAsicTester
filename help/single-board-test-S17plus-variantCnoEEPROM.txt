@@ -1,0 +1,8 @@
+Can test the following Hashboards:
+V9
+BHB91601P/S (aka unknown)
+BHB91603S   (aka unknown) 
+BHB07601    (aka T17)
+
+Special mods:
+- does not check EEPROM (it also doesnt overwrite it)

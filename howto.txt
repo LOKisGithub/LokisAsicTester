@@ -1,0 +1,12 @@
+Extract image:
+dd if=uramdisk.image.gz bs=64 skip=1 of=ramdisk.image.gz
+gunzip ramdisk.image.gz 
+sudo mount -o loop ramdisk.image /mnt/tmp
+
+Make modifications
+
+Repack image:
+sudo umount /mnt/tmp
+gzip -v9 ramdisk.image
+mkimage -A arm -O linux -C gzip -a 0 -e 0 -T ramdisk -n LokisAsicTester -d ramdisk.image.gz uramdisk.image.gz
+

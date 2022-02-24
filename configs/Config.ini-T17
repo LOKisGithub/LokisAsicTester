@@ -1,0 +1,151 @@
+[Config]
+Name=BHB07601
+
+# about ASIC
+AsicType=1397
+AsicNum=30
+
+OpenCoreGap=20000
+
+# Bit[0] SWPF_MODE
+# Bit[1] Reserved
+# Bit[2] MMEN
+# Bit[3] HASH_CLKEN
+# Bit[5:4] PWTH_SEL
+# Bit[7:6] CCDLY_SEL
+CcDelay1_test_times=4
+CoreClockDelay1=0xB4
+CcDelay2_test_times=0
+CoreClockDelay2=0xF4
+
+# test how many patterns, max is 8
+pattern_number=8
+
+# permit how many ASICs not receive all nonces
+Invalid_Asic_Num=30
+
+# permit how many Cores not receive all nonces
+Invalid_Core_Num=64
+
+# the least nonce number per core get
+Least_nonce_per_core=7
+
+# the most HW number
+Most_HW_Num=128
+
+# timeout_percent
+timeout_percent=10
+
+# voltage accuracy
+Voltage_accuracy=10000
+
+# baud rate
+# 0: 3M
+# 1: 1.5M
+# 2: 921600
+# 3: 6M
+# 4: 12M
+# 5: 25M
+# 6: 460800
+# 26: 115200
+baudrate=3
+
+# io_strength
+io_strength=0x2172111
+
+# 0: pattern test
+# 1: only find asic
+Only_find_ASIC=0
+
+# frequence
+Freq1=710
+Freq2=710
+Freq3=650
+Freq4=600
+Freq5=0
+Freq6=0
+Freq7=0
+Freq8=0
+Freq9=0
+
+# voltage
+pre_open_core_voltage=1700
+Voltage1=1690
+Voltage2=1710
+Voltage3=1750
+Voltage4=1750
+Voltage5=0
+Voltage6=0
+Voltage7=0
+Voltage8=0
+Voltage9=0
+
+#sensor model
+#1:TMP451
+#2:TMP461
+#3:TMP421
+#4:TMP431
+#5:ECT218
+#6:TMP411B
+#7:TMP411C
+sensor_model=1
+
+# Temperature sensor address, 0: no sensor
+TempSensor1=7
+TempSensor2=9
+TempSensor3=24
+TempSensor4=22
+
+StartSensor=9
+StartTemp=0
+TargetTemp=100
+AlarmTemp=105
+HeatingUpTime=120
+MaxTempGap=30
+
+# fan speed, 0 is min, 10 is max
+fan_speed=10
+
+# test single ASIC to open which core
+Open_Core_Num1=0
+Open_Core_Num2=10
+Open_Core_Num3=FFFFFFFF
+Open_Core_Num4=FFFFFFFF
+Open_Core_Num5=FFFFFFFF
+Open_Core_Num6=FFFFFFFF
+Open_Core_Num7=FFFFFFFF
+Open_Core_Num8=FFFFFFFF
+
+# version info
+HashBoard_Hardware_Version_1=1
+HashBoard_Hardware_Version_2=0
+HashBoard_Bom_Version_1=1
+HashBoard_Bom_Version_2=0
+HashBoard_Product_ID=1
+
+# whether we should add a voltage gap after test ok. 0:no ; 1:yes
+add_voltage_after_test_ok=0
+
+# add how much voltage after test ok if we need add. 10 = 0.1v
+add_voltage_value=10
+
+# 1 is repair mode (do not overwrite cgminer eeprom info)
+repair_mode=0
+
+# 1 is dump all lost nonce
+Dump_Lost_Nonce=0
+
+#time gap of single board test
+Board_test_time_gap=30
+
+# If ALL level nonece% >= bad_chip_nonce_rate_upper_limit%, but ALL pattern NG, those hashboard is standard
+bad_chip_nonce_rate_upper_limit=90
+
+# If ONE level nonece% < bad_chip_nonce_rate_lower_limit%, nonece% >= bad_chip_nonce_rate_lower_limit%, those hashboard is substandard
+bad_chip_nonce_rate_lower_limit=75
+
+# If bad chip num >= bad_chip_num, will stop test
+bad_chip_num=1
+
+# check sensor type times
+check_sensor_times=5

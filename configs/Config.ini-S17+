@@ -1,0 +1,128 @@
+[Config]
+Name=BHB07602
+Asic_Type=0x1397
+Asic_Num=65
+
+# clock delay
+PWTH_SEL=3
+CCDLY_SEL=0
+
+# test how many patterns, max is 8
+Pattern_Number=8
+
+# permit how many ASICs not receive all nonces
+Invalid_Asic_Num=65
+
+# permit how many Cores not receive all nonces
+Invalid_Core_Num=83
+
+# the least nonce number per core get
+Least_Nonce_Per_Core=7
+
+# the most HW number
+Most_HW_Num=128
+
+# timeout_percent
+Timeout_Percent=10
+
+# baud rate
+Baudrate=12000000
+
+# 0: pattern test
+# 1: only find asic
+Only_find_ASIC=0
+
+# frequence
+Freq1=625
+Freq2=600
+Freq3=575
+Freq4=575
+Freq5=550
+Freq6=525
+Freq7=450
+Freq8=0
+Freq9=0
+
+# voltage
+Open_Core_Voltage=2100
+Voltage1=1950
+Voltage2=1970
+Voltage3=1990
+Voltage4=1970
+Voltage5=1970
+Voltage6=1970
+Voltage7=1970
+Voltage8=0
+Voltage9=0
+
+#test sequency
+Step1=1
+Step2=2
+Step3=3
+Step4=4
+Step5=5
+Step6=6
+Step7=7
+Step8=0
+Step9=0
+
+
+# continue test all freq & voltage(for debug)
+Continue_Test=0
+
+#sensor model
+#1:TMP451
+#2:NCT218
+Sensor_Model=1
+Start_Temp=0
+Alarm_Temp=95
+Heat_Time=1
+
+# fan speed, 0 is min, 100 is max
+Fan_Speed=100
+
+# wait time before close power
+Close_Power_Delay=10
+
+# version info
+Hardware_Version_1=1
+Hardware_Version_2=0
+Bom_Version_1=1
+Bom_Version_2=0
+
+# AG: 0, AI: 1
+Product_ID=0
+
+# 1 is repair mode (do not overwrite cgminer eeprom info)
+Repair_Mode=1
+
+# 1 is dump all lost nonce
+Dump_Lost_Nonce=0
+
+# 1 is check and dump pm
+Check_pm=1
+Max_Bad_pm=1
+
+# use bar code gun to scan QR code and SN, 0: disable, 1: enable
+Scan_qr_code=0
+
+# If ALL level nonece% >= bad_chip_nonce_rate_upper_limit%, but ALL pattern NG, those hashboard is standard
+bad_chip_nonce_rate_upper_limit=90
+
+# If ONE level nonece% < bad_chip_nonce_rate_lower_limit%, nonece% >= bad_chip_nonce_rate_lower_limit%, those hashboard is substandard
+bad_chip_nonce_rate_lower_limit=75
+
+# If domain received nonce rate < per_domain_received_nonce_limit%, we will check if its asic little domain received nonce rate < per_asic_domain_received_nonce_limit%
+per_domain_received_nonce_limit=110
+
+# If asic little domain received nonce rate < per_asic_domain_received_nonce_limit%, this asic little domain is ng!
+per_asic_domain_received_nonce_limit=75
+
+# If domain received nonce rate < per_domain_received_nonce_limit%, we will check if its asic little domain received nonce rate < per_asic_domain_received_nonce_limit%
+per_domain_received_nonce_limit=110
+
+# If asic little domain received nonce rate < per_asic_domain_received_nonce_limit%, this asic little domain is ng!
+per_asic_domain_received_nonce_limit=75
+
+# 1 enable upload log file to ftpserver, 0 disable it
+Upload_log_switch=1

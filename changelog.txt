@@ -1,0 +1,20 @@
+Version 0.2
+-----------
+- fix issues with S17 testbinaries (missing library)
+- add new test binaries (bmminer from stock firmwares, in some cases they are also doing sanity checks)
+- modified some binaries to remove FAN check
+- modified single-board-test-S17plus-variantCnoEEPROM so EEPROM is not overwritten when executing the test
+
+Version 0.1
+-----------
+- Compilation of all single-board-test binaries found in a bunch of testfirmwares and stock firmwares
+- redirect output to /tmp/tester.log (and tty, so USB2tty still works)
+- modified WebUI
+	- FPGA-Version can be selected and flashed (usually BOOT.bin from a stock firmware, be carefull with that! only flash known good BOOT.bin which are compatible with your board or otherwise you will end up having a brick)
+	- select Config (stored on SD in the configs folder) you can have multiple Configs prepared and then just chose the desired one
+	- select test binary (single-board-test) for specific board/miner types
+	- view /tmp/tester.log in the Browser (no need for USB2ttl-Adapter)
+	- add possibility to download tester.log 
+	- auto scroll tester output
+	- start test from WebUI or via IPreport button (or the normal testbutton)
+- runs on universal testfixture and S17+ Controlboards

@@ -1,0 +1,10 @@
+Can test the following Hashboards:
+S7  (45 BM1385)
+S7  (54 BM1385)
+S9  (57 BM1387)
+S9  (63 BM1387)
+S9+ (84 BM1387)
+T9+ (18 BM1387)
+
+Specials:
+single ASIC test BM1387

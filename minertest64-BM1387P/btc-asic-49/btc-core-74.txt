@@ -1,0 +1,1 @@
+midstate 0bc7dbf66d40b32ad8acd2fc2b68bb24b970762253bba5e2f6345bad28cc51fb data b99a0218ddc8a658341f2d4e nonce c69d4bca

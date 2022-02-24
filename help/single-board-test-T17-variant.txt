@@ -1,0 +1,7 @@
+Can test the following Hashboards:
+V9
+BHB91601P
+BHB91601S
+BHB91603S
+BHB07601
+

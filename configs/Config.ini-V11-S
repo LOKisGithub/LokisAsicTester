@@ -1,0 +1,132 @@
+[Config]
+Name=S11 HASH board
+
+# about ASIC
+AsicType=1390
+AsicNum=60
+CoreNum=128
+# CommandMode	0:vil	1:fil
+CommandMode=0
+TestMode=1
+CheckChain=1
+Timeout=0
+OpenCoreGap=50000
+
+# about test benchmark
+DataCount=1024
+PassCount1=1024
+PassCount2=1024
+PassCount3=1024
+PassCount4=1024
+PassCount5=1024
+PassCount6=1024
+PassCount7=1024
+PassCount8=1024
+PassCount9=1024
+
+ValidNonce1=22528
+ValidNonce2=22528
+ValidNonce3=22528
+ValidNonce4=22528
+ValidNonce5=22528
+ValidNonce6=22528
+ValidNonce7=22528
+ValidNonce8=22528
+ValidNonce9=22528
+
+# about frequence
+Freq1=200
+Freq2=350
+Freq3=300
+Freq4=550
+Freq5=550
+Freq6=550
+Freq7=550
+Freq8=550
+Freq9=550
+
+# about voltage
+Voltage1=1060
+Voltage2=0
+Voltage3=0
+Voltage4=0
+Voltage5=0
+Voltage6=0
+Voltage7=0
+Voltage8=0
+Voltage9=0
+
+# about temperature
+CheckTemp=1
+# GetTempFrom   0: get from LM75A through IIC, 1: get from ASIC
+GetTempFrom=1
+# TempSel   0:Select temperature diode in middle of chip, 1:Select temperature diode in bottom io line
+TempSel=0
+
+#sensor model
+#1:TMP451
+#2:TMP461
+#3:TMP421
+#4:TMP431
+#5:ECT218
+#6:TMP411B
+#7:TMP411C
+sensor_model=1
+
+#the temperature gap between remote and local
+remote_local_gap=28
+
+# Temperature sensor address, 0: no sensor
+TempSensor1=2
+TempSensor2=0
+TempSensor3=0
+
+DefaultTempOffset=0
+StartSensor=2
+StartTemp=0
+TargetTemp=85
+AlarmTemp=85
+HeatingUpTime=120
+MaxTempGap=30
+
+# about test single ASIC to open which core
+Open_Core_Num1=3
+Open_Core_Num2=0
+Open_Core_Num3=0
+Open_Core_Num4=0
+Invalid_Core_Num=0
+
+# about Pic
+Pic_VOLTAGE=1
+IICPic=1
+DAC=1
+
+# about Time
+year=2016
+month=5
+date=18
+hour=10
+minute=36
+second=12
+
+# How many times we will send the same pattern 
+pattern_repeat_num=1
+
+# whether we should get voltage & frequence value from pic. 0:no ; 1:yes
+get_parameter_from_pic=0
+
+# whether write frequence value into pic after test ok. 0:no ; 1:yes
+write_freq_into_pic=0
+
+# hold the freq value in pic
+hold_freq_in_pic=1
+
+# whether we should add a voltage gap after test ok. 0:no ; 1:yes
+add_voltage_after_test_ok=0
+# add how much voltage after test ok if we need add. 10 = 0.1v
+add_voltage_value=10
+
+# to control the time gap between 2 times test. 100 = 100ms
+time_gap_between_test=10000
+
+
