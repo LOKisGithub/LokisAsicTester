@@ -1,0 +1,139 @@
+[Config]
+Name=BHB07601
+
+# about ASIC
+AsicType=1397
+AsicNum=48
+
+OpenCoreGap=20000
+
+# Bit[0] SWPF_MODE
+# Bit[1] Reserved
+# Bit[2] MMEN
+# Bit[3] HASH_CLKEN
+# Bit[5:4] PWTH_SEL
+# Bit[7:6] CCDLY_SEL
+CoreClockDelay=0x34
+
+# test how many patterns, max is 8
+pattern_number=8
+
+# permit how many ASICs not receive all nonces
+Invalid_Asic_Num=48
+
+# permit how many Cores not receive all nonces
+Invalid_Core_Num=84
+
+# the least nonce number per core get
+Least_nonce_per_core=7
+
+# the most HW number
+Most_HW_Num=128
+
+# timeout_percent
+timeout_percent=10
+
+# voltage accuracy
+Voltage_accuracy=10000
+
+# baud rate
+# 0: 3M
+# 1: 1.5M
+# 2: 921600
+# 3: 6M
+# 4: 12M
+# 5: 25M
+# 6: 460800
+# 26: 115200
+baudrate=3
+
+# io_strength
+io_strength=0x2172111
+
+# 0: pattern test
+# 1: only find asic
+Only_find_ASIC=0
+
+# frequence
+Freq1=550
+Freq2=550
+Freq3=0
+Freq4=0
+Freq5=0
+Freq6=0
+Freq7=0
+Freq8=0
+Freq9=0
+
+# voltage
+pre_open_core_voltage=2000
+Voltage1=1850
+Voltage2=1800
+Voltage3=0
+Voltage4=0
+Voltage5=0
+Voltage6=0
+Voltage7=0
+Voltage8=0
+Voltage9=0
+
+#sensor model
+#1:TMP451
+#2:TMP461
+#3:TMP421
+#4:TMP431
+#5:ECT218
+#6:TMP411B
+#7:TMP411C
+sensor_model=1
+
+# Temperature sensor address, 0: no sensor
+TempSensor1=9
+TempSensor2=12
+TempSensor3=40
+TempSensor4=37
+
+StartSensor=12
+StartTemp=0
+TargetTemp=100
+AlarmTemp=105
+HeatingUpTime=120
+MaxTempGap=30
+
+# fan speed, 0 is min, 10 is max
+fan_speed=10
+
+# test single ASIC to open which core
+Open_Core_Num1=0
+Open_Core_Num2=10
+Open_Core_Num3=FFFFFFFF
+Open_Core_Num4=FFFFFFFF
+Open_Core_Num5=FFFFFFFF
+Open_Core_Num6=FFFFFFFF
+Open_Core_Num7=FFFFFFFF
+Open_Core_Num8=FFFFFFFF
+
+# version info
+HashBoard_Hardware_Version_1=1
+HashBoard_Hardware_Version_2=1
+HashBoard_Bom_Version_1=1
+HashBoard_Bom_Version_2=3
+HashBoard_Product_ID=0
+
+# whether we should add a voltage gap after test ok. 0:no ; 1:yes
+add_voltage_after_test_ok=0
+
+# add how much voltage after test ok if we need add. 10 = 0.1v
+add_voltage_value=10
+
+# 1 is repair mode (do not overwrite cgminer eeprom info)
+repair_mode=1
+
+# 1 is dump all lost nonce
+Dump_Lost_Nonce=0
+
+# If nonece% >= bad_chip_nonce_rate%, the chip is bad
+bad_chip_nonce_rate=75
+
+# If bad chip num >= bad_chip_num, will stop test
+bad_chip_num=1
