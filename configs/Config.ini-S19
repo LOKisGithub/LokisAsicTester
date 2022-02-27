@@ -1,0 +1,125 @@
+{	
+	"Test_Process":							"PT1",
+
+	"Hash_Board":
+	{
+		"Miner_Type":						"S19",
+		"Board_Name":						"NBS1902-38",
+		"Asic_Type":						"BM1398",
+		"Asic_Num":						76,
+		"Voltage_Domain":					38,
+		"Asic_Num_Per_Voltage_Domain":				2,
+
+		"Sensor_Info":
+		{
+			"Read_Temperature_From_Pic":			true,
+			"Read_Temperature_From_Asic":			false,
+
+			"Pic_Sensor":
+			{				
+				"Pic_Sensor_Model":			"LM75A",
+				"Pic_Sensor_Addr":			[0, 1, 2, 3]
+			},
+
+			"Asic_Sensor":
+			{				
+				"Asic_Sensor_Model":			"NCT218",
+				"Asic_Sensor_Addr":			[25, 57, 58, 90]
+			}			
+		},
+
+		"Power_Version":					[66, 67, 113]
+	},
+
+	"Test_Info":
+	{
+		"Factory_Mode":						false,
+		"Bypass_Scan_Code_Gun":					true,
+		
+		"Test_Method":
+		{
+			"Software_Pattern":				true,
+			"Hardware_Pattern":				false,
+			"Autogen_Pattern":				false,
+			"Midstate_Number":				4
+		},
+
+		"Test_Standard":
+		{
+			"Pattern_Number":				8,
+			"Invalid_Core_Number":				77,
+			"Least_Nonce_Per_Core":				6,
+			"Nonce_Rate":					9950,
+			"Most_HW_Num":					128,
+
+			"Test_Loop":
+			[
+				{
+					"Level":			1,
+					"Pre_Open_Core_Voltage":	1500,
+					"Voltage":			1400,
+					"Frequence":			675
+				},
+				{
+					"Level":			2,
+					"Pre_Open_Core_Voltage":	1500,
+					"Voltage":			1420,
+					"Frequence":			650
+				},
+				{
+					"Level":			3,
+					"Pre_Open_Core_Voltage":	1500,
+					"Voltage":			1440,
+					"Frequence":			625
+				}
+			]
+		},
+
+		"Test_Speed":
+		{
+			"Baudrate":					12000000,
+			"Timeout":					150
+		},
+
+		"Asic_Register":
+		{
+			"CCdly_Sel":					0,
+			"Pwth_Sel":					0,
+			"Swpf_Mode":					0,
+			"Pulse_Mode":					1,
+			"Clk_Sel":					0,
+			"RO_Relay_En":					1,
+			"CO_Relay_En":					1,
+			"Diode_Vdd_Mux_Sel":				3
+		},
+
+		"Temperature":
+		{
+			"Max_Wait_Cooling_Down_Time":			90,
+			"Start_Temp_Gap_Pic":				7,
+			"Time_For_Cooling_Hashboard":			0
+		},
+
+		"Fan":
+		{
+			"Fan_Speed":					100
+		},
+
+		"Display":
+		{
+			"Display_result_Voltage_Domain":		true,
+			"Display_result_Every_Core":			false
+		},
+
+		"Voltage_Accuracy":					50,
+		"Test_Config_Data_Version":				"0"
+	},
+
+	"Repair_Mode":
+	{
+		"Close_Power_Delay":					0,
+		"Clear_EEPROM_Data":					false
+	},
+	
+	"Null":											0
+}

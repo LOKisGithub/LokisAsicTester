@@ -1,3 +1,11 @@
+Version 0.4
+-----------
+- added binaries and config for S19
+
+Version 0.3
+-----------
+- added binaries for T17 testing
+
 Version 0.2
 -----------
 - fix issues with S17 testbinaries (missing library)
