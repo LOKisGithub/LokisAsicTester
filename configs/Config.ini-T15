@@ -1,0 +1,121 @@
+﻿[Config]
+Name=BHB91601S
+
+# about ASIC
+
+# BM1391P: 13911
+# BM1391S: 13912
+AsicType=13912
+AsicNum=60
+
+OpenCoreGap=20000
+
+# about test how many pattern
+pattern_number=8
+
+# permit how many ASICs not receive all nonces
+Invalid_Core_Num=32
+
+# the least nonce number per core get
+Least_nonce_per_core=7
+
+# the most HW number
+Most_HW_Num=128
+
+# about timeout_percent
+timeout_percent=65
+
+# voltage accuracy
+Voltage_accuracy=10000
+
+# about baud rate
+# 0: 3M
+# 1: 1.5M
+# 2: 921600
+# 6: 460800
+# 26: 115200
+baudrate=0
+
+# io_strength
+io_strength=2172111
+
+# '1'：only find asic；'0'：pattenceshi
+Only_find_ASIC=0
+
+# about frequence
+Freq1=350
+Freq2=0
+Freq3=0
+Freq4=0
+Freq5=0
+Freq6=0
+Freq7=0
+Freq8=0
+Freq9=0
+pre_open_core_voltage=2000
+# about voltage
+Voltage1=1990
+Voltage2=0
+Voltage3=0
+Voltage4=0
+Voltage5=0
+Voltage6=0
+Voltage7=0
+Voltage8=0
+Voltage9=0
+
+#sensor model
+#1:LM75A
+
+#sensor model
+#1:TMP451
+#2:TMP461
+#3:TMP421
+#4:TMP431
+#5:ECT218
+#6:TMP411B
+#7:TMP411C
+sensor_model=1
+
+#the temperature gap between remote and local
+remote_local_gap=28
+
+# Temperature sensor address, 0: no sensor
+TempSensor1=11
+TempSensor2=15
+TempSensor3=45
+TempSensor4=45
+
+DefaultTempOffset=0
+StartSensor=11
+StartTemp=0
+TargetTemp=85
+AlarmTemp=85
+HeatingUpTime=120
+MaxTempGap=30
+fan_speed=9
+
+# about test single ASIC to open which core
+Open_Core_Num1=4
+Open_Core_Num2=10
+Open_Core_Num3=FFFFFFFF
+Open_Core_Num4=FFFFFFFF
+Open_Core_Num5=FFFFFFFF
+Open_Core_Num6=FFFFFFFF
+Open_Core_Num7=FFFFFFFF
+Open_Core_Num8=FFFFFFFF
+
+# about Hashboard
+HashBoard_Hardware_Version_1=1
+HashBoard_Hardware_Version_2=1
+HashBoard_Bom_Version_1=1
+HashBoard_Bom_Version_2=0
+
+# whether we should add a voltage gap after test ok. 0:no ; 1:yes
+add_voltage_after_test_ok=0
+
+# add how much voltage after test ok if we need add. 10 = 0.1v
+add_voltage_value=10
+
+
+
