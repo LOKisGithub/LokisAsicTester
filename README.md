@@ -11,6 +11,6 @@ This is a compilation of all test binaries found in different Antminer Firmwares
 You can prepare your config files and save them to the configs folder on the SD card. The WebUI will pickup all configs and show the in a dropdown, so you can easily chose between different config-files.
 
 - Boot your testfixture or S17+ Controlboard from SD
-- point your browser to [lokisAsicTester.local](http://lokisAsicTester.local) 
+- point your browser to [lokisAsicTester.local](http://lokisAsicTester.local) (login is root/root)
 - setup your test config and binaries
 - hit the test button (IP-report button) or start the test from the WebUI 
