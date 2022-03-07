@@ -7,3 +7,5 @@ This is a compilation of all test binaries found in different Antminer Firmwares
 - Copy the contents to a SD card (needs to be FAT32 formatted)
 - Boot S17 controlboard or Universaltestfixture with SD card
 
+# Usage
+You can prepare your config files and save them to the configs folder on the SD card. The WebUI will pickup all configs and show the in a dropdown, so you can easily chose between different config-files.
