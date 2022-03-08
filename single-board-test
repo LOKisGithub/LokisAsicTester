@@ -1,4 +1,4 @@
 #!/bin/sh
 date >> /tmp/tester.log
 echo "Executing single-board-test-S9-variant" | tee -a /tmp/tester.log
-/mnt/card/unbuffer.elf /mnt/card/testtool/single-board-test-S9-variant | tee -a /tmp/tester.log
+/mnt/card/utils/unbuffer.elf /mnt/card/testtool/single-board-test-S9-variant | tee -a /tmp/tester.log

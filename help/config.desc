@@ -1,0 +1,69 @@
+#Key; Possible values; Description
+Name;BHB91601P|BHB91603S|BHB91601S|V9;Which hashboard should be tested?
+pattern_number;;
+AsicNum;;Number of Asics on the board
+AsicType;;Asic type
+Freq1;;
+Freq2;;
+Freq3;;
+Freq4;;
+Freq5;;
+Freq6;;
+Freq7;;
+Freq8;;
+Freq9;;
+Voltage1;;
+Voltage2;;
+Voltage3;;
+Voltage4;;
+Voltage5;;
+Voltage6;;
+Voltage7;;
+Voltage8;;
+Voltage9;;
+Voltage_accuracy;;
+OpenCoreGap;;
+CheckTemp;;
+Open_Core_Num1;;
+Open_Core_Num2;;
+Open_Core_Num3;;
+Open_Core_Num4;;
+Open_Core_Num5;;
+Open_Core_Num6;;
+Open_Core_Num7;;
+Open_Core_Num8;;
+sensor_model;;Temperature sensor model
+remote_local_gap;;
+TempSensor1;;
+TempSensor2;;
+TempSensor3;;
+TempSensor4;;
+StartSensor;;
+StartTemp;;
+TargetTemp;;
+add_voltage_after_test_ok;;
+add_voltage_value;;
+AlarmTemp;;
+HeatingUpTime;;
+MaxTempGap;;
+Invalid_Asic_Num;;
+Invalid_Core_Num;;
+Least_nonce_per_core;;
+Most_HW_Num;;
+close_power_delay;;wait time before close power
+fan_speed;;fan speed, 0 is min, 100 is max
+HashBoard_Hardware_Version_1;;
+HashBoard_Hardware_Version_2;;
+HashBoard_Bom_Version_1;;
+HashBoard_Bom_Version_2;;
+HashBoard_Product_ID;;
+timeout_percent;;
+baudrate;;
+Only_find_ASIC;0|1;do a pattern test (=0) or only search for asics (=1)
+pre_open_core_voltage;;
+io_strength;;
+repair_mode;;1 is repair mode (do not overwrite cgminer eeprom info)
+Dump_Lost_Nonce;;
+CoreClockDelay;;
+bad_chip_nonce_rate;;
+bad_chip_num;;

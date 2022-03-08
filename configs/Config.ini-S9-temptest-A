@@ -2,7 +2,7 @@
 Name=S9 HASH board
 
 # test data
-TestDir=/mnt/mmc1/minertest64/minertest64_
+TestDir=/mnt/card/minertest64/minertest64_
 
 # about ASIC
 AsicType=1387
