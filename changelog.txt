@@ -1,3 +1,9 @@
+Version 0.6
+-----------
+- show current fpga version in main status view
+- autotest feature added (you do not have to press the testbutton anymore the test will be done in a loop)
+- added FPGA Version 0xb01b - should work for S15 & T15
+
 Version 0.5
 -----------
 - added eeprom support (highly experimental)
