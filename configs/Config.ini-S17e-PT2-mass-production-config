@@ -1,0 +1,135 @@
+[Config]
+Name=BHB16601
+Asic_Type=0x1396
+Asic_Num=135
+
+# test how many patterns, max is 8
+Pattern_Number=8
+
+# permit how many ASICs not receive all nonces
+Invalid_Asic_Num=135
+
+# permit how many Cores not receive all nonces
+Invalid_Core_Num=64
+
+# the least nonce number per core get
+Least_Nonce_Per_Core=7
+
+# the most HW number
+Most_HW_Num=128
+
+# timeout_percent
+Timeout_Percent=10
+
+# baud rate
+Baudrate=12000000
+
+# 0: pattern test
+# 1: only find asic
+Only_find_ASIC=0
+
+# frequence
+Freq1=350
+Freq2=300
+Freq3=0
+Freq4=0
+Freq5=0
+Freq6=0
+Freq7=0
+Freq8=0
+Freq9=0
+
+# voltage
+Open_Core_Voltage=2000
+Voltage1=1840
+Voltage2=1840
+Voltage3=0
+Voltage4=0
+Voltage5=0
+Voltage6=0
+Voltage7=0
+Voltage8=0
+Voltage9=0
+
+#test sequency
+Step1=1
+Step2=2
+Step3=0
+Step4=0
+Step5=0
+Step6=0
+Step7=0
+Step8=0
+Step9=0
+
+# PWTH_SEL
+Pwth_sel1=3
+Pwth_sel2=3
+Pwth_sel3=0
+Pwth_sel4=0
+Pwth_sel5=0
+Pwth_sel6=0
+Pwth_sel7=0
+Pwth_sel8=0
+Pwth_sel9=0
+
+# CCDLY_SEL
+Ccdly_sel1=1
+Ccdly_sel2=1
+Ccdly_sel3=0
+Ccdly_sel4=0
+Ccdly_sel5=0
+Ccdly_sel6=0
+Ccdly_sel7=0
+Ccdly_sel8=0
+Ccdly_sel9=0
+
+# continue test all freq & voltage(for debug)
+Continue_Test=0
+
+#sensor model
+Start_Temp=0
+Alarm_Temp=105
+Heat_Time=60
+
+# fan speed, 0 is min, 100 is max
+Fan_Speed=100
+
+# wait time before close power
+Close_Power_Delay=1
+
+# wait time after close power
+Power_Off_Time=10
+
+# product id
+Product_ID=1
+
+# 1 is repair mode (do not overwrite cgminer eeprom info)
+Repair_Mode=0
+
+# 1 is dump all lost nonce
+Dump_Lost_Nonce=0
+
+# select more than how many asic fail report total fail
+Pattern_asic_num=1
+
+# select percent value to judge the broken asic
+Bad_chip_nonce_rate_limit=75
+
+# 1 is open pm check, 0 is close pm check
+Check_PM=1
+
+# if Check_PM is enable, select how many asic fail report test fail
+PM_asic_num=1
+
+# if Check_PM is enable, select freq
+PM_freq_value=200
+
+# if Check_PM is enable, select voltage
+PM_vol_value=2000
+
+# find crazy asic
+find_crazy_asic=0
+
+# 1 enable upload log file to ftpserver, 0 disable it
+Upload_log_switch=1
