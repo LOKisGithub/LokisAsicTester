@@ -1,0 +1,246 @@
+[Config]
+#about Miner Type		T11 HASH board	T11a HASH board
+Name=T11 HASH board
+#Name=T11a HASH board
+
+#about test mode
+ASIC_Sweep=0
+
+# about ASIC
+AsicType=1393
+#AsicNum=108
+AsicNum=60
+CoreNum=208
+
+# CommandMode	0:vil	1:fil
+CommandMode=0
+TestMode=1
+CheckChain=1
+Timeout=0
+OpenCoreGap=50000
+
+enable_calc_power=0
+disable_pic_vol_ctrl=1
+shutdown_pic_after_test=1
+
+##software version info
+version=190312
+
+## PCB_VERSION: 	83602: V2.0 = 32;  V2.1 = 33		83601: V3.9 = 57
+pcb_version=57
+#pcb_version=33
+
+## BOM_VERSION: 	V1.0 = 16;  V1.1 = 17;  V2.0 = 32;   V2.1 = 33
+bom_version=16
+
+#chip major type
+#0:1393
+#1:1391
+#2:1397
+#3:1398
+chip_major_type=0
+
+#chip minor type
+#0:BSL
+#1:BE
+#2:B_BGM
+#3:BE_BGM
+#4:CE
+chip_minor_type=0
+
+#chip level
+#0:BIN1
+#1:BIN2
+#2:BIN3
+#3:BIN4
+chip_level=0
+
+## 0:disable 1:hardware 2:software
+SweepFreq=0
+SweepFreqTimeout=0x300
+SweepFreqClkSel=9
+PulseMode=0
+UsePllList=0
+FreqStep=25
+InitFreq=100
+
+#Best rate
+NonceRate=98
+#Good rate
+GoodRate=95
+#per_asic rate
+asic_pass_rate=90
+low_rate_cnt=2
+
+# about test benchmark
+DataCount=1664
+
+PassCount1=1664
+PassCount2=1664
+PassCount3=1664
+PassCount4=1664
+PassCount5=1664
+PassCount6=1664
+PassCount7=1664
+PassCount8=1664
+PassCount9=1664
+PassCount10=1664
+PassCount11=1664
+PassCount12=1664
+PassCount13=1664
+PassCount14=1664
+PassCount15=1664
+PassCount16=1664
+PassCount17=1664
+PassCount18=1664
+
+ValidNonce1=99840
+ValidNonce2=99840
+ValidNonce3=99840
+ValidNonce4=99840
+ValidNonce5=99840
+ValidNonce6=99840
+ValidNonce7=99840
+ValidNonce8=99840
+ValidNonce9=99840
+ValidNonce10=99840     
+ValidNonce11=99840    
+ValidNonce12=99840
+ValidNonce13=99840
+ValidNonce14=99840
+ValidNonce15=99840
+ValidNonce16=99840
+ValidNonce17=99840
+ValidNonce18=99840
+
+# about frequence
+Freq1=335
+Freq2=345
+Freq3=355
+Freq4=335
+Freq5=335
+Freq6=335
+Freq7=335
+Freq8=335
+Freq9=335
+
+
+# about voltage
+opencore_vol=1020
+
+Voltage1=990
+Voltage2=990
+Voltage3=990
+Voltage4=990
+Voltage5=990
+Voltage6=990
+Voltage7=990
+Voltage8=990
+Voltage9=990
+
+pattern_loop=1
+
+#stage2 freq
+s2freq1=300
+s2freq2=325
+s2freq3=350
+s2freq4=375
+s2freq5=400
+s2freq6=425
+
+
+JthMin=93.0
+JthMax=95.0
+
+# about temperature
+CheckTemp=1
+# GetTempFrom   0: get from LM75A through IIC, 1: get from ASIC
+GetTempFrom=1
+# TempSel   0:Select temperature diode in middle of chip, 1:Select temperature diode in bottom io line
+TempSel=0
+
+#sensor model
+#1:TMP451
+#2:TMP461
+#3:TMP421
+#4:TMP431
+#5:ECT218
+#6:TMP411B
+#7:TMP411C
+sensor_model=1
+
+#the temperature gap between remote and local
+remote_local_gap=28
+
+# Temperature sensor address, 0: no sensor
+TempSensor1=31
+TempSensor2=40
+TempSensor3=0
+TempSensor4=0
+
+#TempSensor1=27
+#TempSensor2=19
+#TempSensor3=81
+#TempSensor4=73
+
+DefaultTempOffset=0
+StartSensor=10
+StartTemp=0
+TargetTemp=85
+AlarmTemp=85
+HeatingUpTime=120
+MaxTempGap=40
+
+# about test single ASIC to open which core
+Open_Core_Num1=3
+Open_Core_Num2=0
+Open_Core_Num3=0
+Open_Core_Num4=0
+Invalid_Core_Num=0
+
+# about Pic
+Pic_VOLTAGE=1
+IICPic=1
+DAC=1
+
+# about Fix power per hash rate
+Total_Pass_Nonce=96345
+Fix_Power_Per_Hash=90
+Fan_Power=0
+Pass_Core_Num=190
+Pass_Asic_Num=50
+Core_Nonce_Num=6
+Chip_Nonce_Num=1600
+Asic_Pass_Core_Num=50
+Freq_Start=0
+Voltage_Start=0
+
+# about Time
+year=2018
+month=8
+date=6
+hour=10
+minute=36
+second=12
+
+# How many times we will send the same pattern 
+pattern_repeat_num=1
+
+# whether we should get voltage & frequence value from pic. 0:no ; 1:yes
+get_parameter_from_pic=0
+
+# whether write frequence value into pic after test ok. 0:no ; 1:yes
+write_freq_into_pic=0
+
+# hold the freq value in pic
+hold_freq_in_pic=1
+
+# whether we should add a voltage gap after test ok. 0:no ; 1:yes
+add_voltage_after_test_ok=0
+# add how much voltage after test ok if we need add. 10 = 0.1v
+add_voltage_value=10
+
+# to control the time gap between 2 times test. 100 = 100ms
+time_gap_between_test=10000
+
+
