@@ -1,3 +1,12 @@
+Version 0.7
+-----------
+- added S15 config
+- added S17e config and test binary
+- added S9SE & S9K config
+- renamed T15 configs
+- moved bmminer executables to different directory to avoid confusion
+- fixed issue #2 (changing the config showed an error)
+
 Version 0.6
 -----------
 - show current fpga version in main status view
