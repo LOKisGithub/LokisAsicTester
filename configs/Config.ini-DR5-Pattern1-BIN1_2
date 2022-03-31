@@ -1,0 +1,97 @@
+[Config]
+Name=BBD25601 board
+
+# about ASIC
+AsicType=1725
+AsicNum=72
+
+OpenCoreGap=20000
+
+# about test how many pattern
+pattern_number=1
+
+# send time interval between each work
+Timeout=800
+
+# permit how many ASICs not receive all nonces
+Invalid_Asic_Num=32
+
+# permit how many cores not receive all nonces
+Invalid_Core_Num=138
+
+# the least nonce number per core get
+Least_nonce_per_core=0
+
+# the most allowed lost nonce
+Most_lost_nonce_total=100
+
+# the most HW number
+Most_HW_Num=20
+
+# the BIN
+BIN_Num=1
+
+# about frequence
+Freq1=600
+Freq2=600
+Freq3=0
+Freq4=0
+Freq5=0
+Freq6=0
+Freq7=0
+Freq8=0
+Freq9=0
+
+# about voltage
+Voltage1=870
+Voltage2=890
+Voltage3=0
+Voltage4=0
+Voltage5=0
+Voltage6=0
+Voltage7=0
+Voltage8=0
+Voltage9=0
+
+#sensor model
+#1:TMP451
+#2:TMP461
+#3:TMP421
+#4:TMP431
+#5:NCT218
+#6:TMP411B
+#7:TMP411C
+#8:NCT72
+sensor_model=1
+
+# about temperature
+CheckTemp=1
+
+#the temperature gap between remote and local
+remote_local_gap=28
+
+# Temperature sensor address, 0: no sensor
+TempSensor1=1
+TempSensor2=18
+TempSensor3=0
+
+DefaultTempOffset=0
+StartSensor=1
+StartTemp=30
+TargetTemp=85
+AlarmTemp=100
+HeatingUpTime=120
+MaxTempGap=30
+
+# whether we should add a voltage gap after test ok. 0:no ; 1:yes
+add_voltage_after_test_ok=0
+
+# add how much voltage after test ok if we need add. 10 = 0.1v
+add_voltage_value=10
+
+# time dealy (seconds) after can not find all asic
+close_power_delay=10
+
+
+
+
