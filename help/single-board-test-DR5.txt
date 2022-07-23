@@ -1,0 +1,5 @@
+Can test the following Hashboards:
+singleBoardTest_BBD12601
+singleAsicTest_BM1722
+singleBoardTest_BBD25601
+singleAsicTest_BM1725
